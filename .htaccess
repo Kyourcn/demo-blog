@@ -1,0 +1,8 @@
+RewriteEngine On
+
+RewriteRule index.html index.php
+RewriteRule ^word-([0-9]*).html$ view.php?id=$1
+RewriteRule ^word([0-9]*).html$ view.php?id=$1
+RewriteRule ^([0-9]*).html$ b.php?n=$1
+RewriteRule ^-([a-z]*).html$ b.php?n=$1
+RewriteRule ^_([a-z]*).html$ $1.php
